@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+body {
+  font-family: "Note Sans TC", sans-serif;
+}
+
+/* 字體設定 */
+
+h1 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+h4 {
+  font-size: 24px;
+  color: #212529;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+h5 {
+  font-size: 20px;
+  color: #57a203;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.p-md {
+  font-size: 16px;
+  color: #212529;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.p-sm {
+  font-size: 14px;
+  color: #212529;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+
+
+.pr-400 {
+  color: #57a203;
+}
+
+.neu-600{
+    color: #6c757d;
+}
+
+img {
+  min-width: 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-header {
+  height: 400px;
+  background-image: url("./img/Hero_Section.png");
+  margin-bottom: 64px;
+}
+
+/* 容器 */
+
+.hero-content {
+  padding-top: 151px;
+  padding-bottom: 151px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote-block {
+  width: 856px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.quote-container {
+  background-color: #f5fee7;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.intro-img {
+  width: 1076px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.text-container {
+  width: 856px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.h1-block {
+  margin-bottom: 16px;
+}
+
+.h4-block {
+  margin-bottom: 24px;
+}
+
+.h5-block {
+  margin-bottom: 12px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+.year {
+  margin-right: 8px;
+}
+
+.content {
+  border-left: 1px solid #212529;
+  padding-left: 8px;
+}
+
+.concept {
+  padding-left: 12px;
+  border-left: 3px solid #dee2e6;
+}
+
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.story-content {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  margin-left: 8px;
+  border-bottom: 1px solid #57a203;
+}
+
+.footer-container{
+  margin-top: 64px;
+}
+
+.footer-content {
+  background-color: #f8f9fa;
+  padding-top: 64px;
+  padding-bottom: 62px;
+  text-align: center;
+}
