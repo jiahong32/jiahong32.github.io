@@ -1,0 +1,468 @@
+/* ----- 字體匯入 ----- */
+
+/* Mina + Note Sans TC*/
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Noto+Sans+TC:wght@100..900&display=swap");
+
+body {
+  font-family: "Note Sans TC", sans-serif;
+}
+
+/* 顏色 */
+.neu-300 {
+  color: #dee2e6;
+}
+
+.neu-400 {
+  color: #adb5bd;
+}
+
+.neu-600 {
+  color: #6c757d;
+}
+
+.neu-900 {
+  color: #212529;
+}
+
+.pri-400 {
+  color: #57a203;
+}
+
+.dan-300 {
+  color: #d74f4f;
+}
+
+/* 字體設定 */
+.logo-style {
+  font-family: "Mina";
+  color: #212529;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.044;
+  text-decoration: none;
+}
+
+.h2-block {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.h3-block {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.h4-block {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.h5-block {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.h6-block {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.l-lg {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.l-md {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.l-sm {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.l-xs {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.p-lg {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.p-md {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.p-sm {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.p-xs {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 312px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link-container {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  gap: 8px;
+}
+
+.nav-link a {
+  text-decoration: none;
+}
+
+.product-list {
+  padding: 32px 312px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu {
+  box-sizing: border-box;
+  min-width: 196px;
+  padding-right: 24px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu ul li {
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  gap: 16px;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: #57a203;
+}
+
+.content-container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.card {
+  flex: 0 0 calc((100% - 48px) / 3);
+  box-sizing: border-box;
+  width: 33.33%;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.card-img {
+  margin-bottom: 12px;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.page,
+.icon-container {
+  display: block;
+  box-sizing: border-box;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 10px;
+}
+
+.page:hover {
+  background-color: #f8f9fa;
+}
+
+.page:active {
+  background-color: #c0fa73;
+}
+
+.banner-container {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  background-color: #e8fec5;
+  padding: 24px 0;
+}
+
+.banner-btn {
+  padding: 12px 24px;
+  color: #ffffff;
+  background-color: #212529;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-container {
+  background-color: #f8f9fa;
+  padding: 64px 312px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.copyright {
+  padding-top: 32px;
+  border-top: 1px solid #dee2e6;
+  gap: 4px;
+  text-align: center;
+}
+
+/* -----產品詳情頁----- */
+
+.product-info-container {
+  display: flex;
+  width: 1296px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  gap: 24px;
+}
+
+.product-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.product-image-card {
+  flex: 0 0 calc(50% - 8px);
+  box-sizing: border-box;
+}
+
+.product-image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-info {
+  max-width: 526px;
+  flex-shrink: 0; /* 不讓它被壓縮 */
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-descript {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.color-img {
+  width: 64px;
+  height: 64px;
+}
+
+.color-img img {
+  width: 100%;
+}
+
+.color-warrper {
+  display: flex;
+  gap: 8px;
+}
+
+.color-btn {
+  text-align: center;
+}
+
+.size-warrper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.size-btn {
+  width: 160px;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.size-btn:active {
+  border: 1px solid #212529;
+}
+
+.size-btn:hover {
+  border: 1px solid #6c757d;
+}
+
+.collect-btn {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  min-height: 48px;
+  border: 1px solid #212529;
+  border-radius: 4px;
+}
+
+.collect-btn:hover {
+  color: #ffffff;
+  background-color: #212529;
+  border: 1px solid #212529;
+}
+
+.accordtion-item {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.best-seller-container {
+  width: 1296px;
+  margin: 0 auto;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 40px;
+}
+
+.best-seller-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.best-seller-card {
+  flex: 0 0 calc(25% - 24px);
+  box-sizing: border-box;
+}
+
+.best-seller-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
