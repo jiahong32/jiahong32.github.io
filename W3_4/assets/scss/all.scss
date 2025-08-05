@@ -1,0 +1,542 @@
+@import './reset.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './pages/index.scss';
+@import './pages/product.scss';
+@import './pages/product_detail.scss';
+@import './pages/collect.scss';
+@import './pages/login_signup.scss';
+@import './pages/brand_story';
+
+/* Mina + Note Sans TC*/
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Noto+Sans+TC:wght@100..900&display=swap");
+
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text-container {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-900);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-100: #f5fee7;
+  --primary-200: #e8fec5;
+  --primary-300: #c0fa73;
+  --primary-400: #57a203;
+  --primary-500: #477a11;
+  --neutral-0: #ffffff;
+  --neutral-100: #f8f9fa;
+  --neutral-200: #e9ecef;
+  --neutral-300: #dee2e6;
+  --neutral-400: #ced4da;
+  --neutral-500: #adb5bd;
+  --neutral-600: #6c757d;
+  --neutral-700: #495057;
+  --neutral-800: #343a40;
+  --neutral-900: #212529;
+  --danger-300: #D74F4F;
+}
+
+.pri-300 {
+  color: var(--primary-300);
+}
+
+.pri-400{
+  color: var(--primary-400);
+}
+
+.neu-400{
+  color: var(--neutral-400);
+}
+
+.neu-600{
+    color: var(--neutral-600);
+}
+
+.dan-300{
+  color: var(--danger-300);
+}
+
+/* 字體設定 */
+.display-2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.l-lg {
+  font-size: 20px;
+}
+
+.l-md {
+  font-size: 16px;
+}
+
+.l-sm {
+  font-size: 14px;
+}
+
+.l-xs {
+  font-size: 12px;
+}
+
+.p-lg {
+  font-size: 20px;
+}
+
+.p-md {
+  font-size: 16px;
+}
+
+.p-sm {
+  font-size: 14px;
+}
+
+.p-xs {
+  font-size: 12px;
+}
+
+@media (max-width: 776px) {
+  .display-2-md {
+    font-size: 32px;
+  }
+
+  .h2 {
+    font-size: 24px;
+  }
+
+  .h3 {
+    font-size: 20px;
+  }
+  
+  .h4-md{
+    font-size: 20px;
+  }
+
+  .h5 {
+    font-size: 16px;
+  }
+
+  .p-md-md {
+    font-size: 14px;
+  }
+
+  .l-md-md{
+    font-size: 14px;
+  }
+}
+
+/* 格線系統 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+[class*="col-"] {
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.col {
+  flex: 0 0 8.3333%;
+}
+
+.col-2 {
+  flex: 0 0 16.6667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333%;
+}
+
+.col-5 {
+  flex: 0 0 41.6667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.3333%;
+}
+
+.col-8 {
+  flex: 0 0 66.6667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.333%;
+}
+
+.col-11 {
+  flex: 0 0 91.6667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+}
+
+@media (max-width: 776px) {
+  .row-md {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -6px;
+  }
+
+  [class*="colmd-"] {
+    padding: 6px;
+    box-sizing: border-box;
+  }
+
+  .colmd-1 {
+    flex: 0 0 25%;
+  }
+
+  .colmd-2 {
+    flex: 0 0 50%;
+  }
+
+  .colmd-3 {
+    flex: 0 0 75%;
+  }
+
+  .colmd-4 {
+    flex: 0 0 100%;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block{
+  display: block;
+}
+
+
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.align-items-stretch{
+  align-items: stretch;
+}
+
+.nowrap{
+  flex-wrap: nowrap;
+}
+
+.g-48 {
+  gap: 48px;
+}
+
+.g-40 {
+  gap: 40px;
+}
+
+.g-32{
+  gap: 32px;
+}
+
+.g-24{
+  gap: 24px;
+}
+
+.g-12{
+  gap: 12px;
+}
+
+.g-4{
+  gap: 4px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.my-64 {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.my-48{
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+@media (max-width: 776px) {
+  .mb-48 {
+    margin-bottom: 32px;
+  }
+
+  .mb-32 {
+    margin-bottom: 24px;
+  }
+
+  .mb-md24{
+    margin-bottom: 24px;
+  }
+}
+
+/* navbar */
+.nav-container {
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  font-family: "Mina";
+  color: var(--neutral-900);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.0044em;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+.nav-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--neutral-900);
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.icon {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.nav-menu-md {
+  display: none;
+}
+
+@media (max-width: 776px) {
+  /* navbar rwd*/
+  .nav-container {
+    padding: 12px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu-md {
+    max-width: 100%;
+    display: flex;
+  }
+
+  .nav-menu-md li {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-100);
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p{
+  color: var(--neutral-900);
+}
+
+/* banner */
+.banner-container {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  background-color: var(--primary-200);
+  padding: 24px 0;
+}
+
+/* 元件 */
+.card-img{
+  cursor: pointer;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.banner-btn {
+  color: var(--neutral-0);
+  background-color: var(--neutral-900);
+  border: none;
+}
+
+.banner-btn:hover{
+  background-color: var(--neutral-700);
+}
+
+.banner-btn:focus{
+  box-shadow: 0 0 0 3px rgba($color: #212529, $alpha: 0.1);
+}
+
+.black-btn{
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+}
+
+@media (max-width: 776px) {
+  .btn-md{
+    padding: 8px 16px;
+  }
+  
+}

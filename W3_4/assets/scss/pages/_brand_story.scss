@@ -1,0 +1,141 @@
+.hero-header {
+  height: 400px;
+  width: auto;
+  background-image: url("/assets/images/Hero_Section.png");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 64px;
+}
+
+.hero-content {
+  padding-top: 151px;
+  padding-bottom: 151px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote-block {
+  max-width: 856px;
+  margin: 0 auto 48px;
+  margin-bottom: 48px;
+}
+
+.quote-container {
+  background-color: #f5fee7;
+  padding: 32px;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.intro-img {
+  max-width: 1076px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.story-container {
+  max-width: 856px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.story-container h2 {
+  margin-bottom: 24px;
+}
+
+.year {
+  margin-right: 8px;
+}
+
+.content {
+  border-left: 1px solid #212529;
+  padding-left: 8px;
+}
+
+ol {
+  list-style: disc;
+  padding-left: 24px;
+}
+
+ol li {
+  margin-bottom: 12px;
+}
+
+.concept {
+  padding-left: 12px;
+  border-left: 3px solid #dee2e6;
+}
+
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.story-content {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  margin-left: 8px;
+}
+
+.story-container a:hover {
+  border-bottom: 1px solid var(--primary-400);
+}
+
+@media (max-width: 776px) {
+  .hero-header {
+    height: 240px;
+    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/assets/images/hero-sm.png");
+    margin-bottom: 32px;
+  }
+
+  .hero-content {
+    padding-top: 87px;
+    padding-bottom: 87px;
+  }
+
+  .hero-content h2 .h1 {
+    font-size: 28px;
+  }
+
+  .hero-content .h3 {
+    font-size: 20px;
+  }
+
+  .quote-container {
+    padding: 24px;
+    text-align: left;
+  }
+
+  .quote-block {
+    margin-bottom: 32px;
+  }
+
+  .intro-img {
+    margin: 0 12px 16px;
+  }
+
+  .story-container {
+    margin: 0 12px 32px;
+  }
+
+  .story-container h2 {
+    margin-bottom: 16px;
+  }
+
+  .story-container h2 .h4 {
+    font-size: 20px;
+  }
+
+  .story-container h2 .h5 {
+    font-size: 16px;
+  }
+}

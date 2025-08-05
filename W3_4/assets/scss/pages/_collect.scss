@@ -1,0 +1,94 @@
+.collect-container {
+  max-width: 636px;
+  margin: 64px auto;
+}
+
+.collect-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.check-block {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: #c0fa73;
+  border-radius: 50%;
+}
+
+.check {
+  color: #477a11;
+}
+
+.truck-block {
+  width: 24px;
+  height: 24px;
+}
+
+.open-time-note {
+  display: flex;
+  background-color: var(--primary-100);
+  gap: 12px;
+  padding: 16px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.time-note-md {
+  display: none;
+}
+
+.collect-item-card {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.collect-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.collect-item-img {
+  width: 120px;
+  height: 120px;
+}
+
+.collect-item-img img {
+  width: 120px;
+  height: auto;
+}
+
+.collect-item-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.item-price {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .collect-container {
+    margin: 24px auto;
+    padding: 0 12px;
+  }
+
+  .time-note {
+    display: none;
+  }
+
+  .time-note-md {
+    display: block;
+  }
+
+  .item-price {
+    text-align: left;
+  }
+}
