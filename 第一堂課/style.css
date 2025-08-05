@@ -1,55 +1,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 
 body {
-  font-family: "Note Sans TC", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-900);
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-100: #f5fee7;
+  --primary-200: #e8fec5;
+  --primary-300: #c0fa73;
+  --primary-400: #57a203;
+  --primary-500: #477a11;
+  --neutral-0: #ffffff;
+  --neutral-100: #f8f9fa;
+  --neutral-200: #e9ecef;
+  --neutral-300: #dee2e6;
+  --neutral-400: #ced4da;
+  --neutral-500: #adb5bd;
+  --neutral-600: #6c757d;
+  --neutral-700: #495057;
+  --neutral-800: #343a40;
+  --neutral-900: #212529;
+  --danger-300: #D74F4F;
+}
+
+.pri-300 {
+  color: var(--primary-300);
+}
+
+.pri-400{
+  color: var(--primary-400);
+}
+
+.neu-400{
+  color: var(--neutral-400);
+}
+
+.neu-600{
+    color: var(--neutral-600);
+}
+
+.dan-300{
+  color: var(--danger-300);
+}
+
 
 /* 字體設定 */
-
-h1 {
-  font-size: 40px;
-  color: #ffffff;
-  font-weight: bold;
+.display-2 {
+  font-size: 48px;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.05em;
 }
 
-h3 {
+.h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h3 {
   font-size: 28px;
-  color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.05em;
 }
 
-h4 {
+.h4 {
   font-size: 24px;
-  color: #212529;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.05em;
 }
 
-h5 {
+.h5 {
   font-size: 20px;
-  color: #57a203;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.05em;
+}
+
+.h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.l-lg {
+  font-size: 20px;
+}
+
+.l-md {
+  font-size: 16px;
+}
+
+.l-sm {
+  font-size: 14px;
+}
+
+.l-xs {
+  font-size: 12px;
+}
+
+.p-lg {
+  font-size: 20px;
 }
 
 .p-md {
   font-size: 16px;
-  color: #212529;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
 }
 
 .p-sm {
   font-size: 14px;
-  color: #212529;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
+}
+
+.p-xs {
+  font-size: 12px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
 }
 
 
@@ -62,14 +185,15 @@ h5 {
     color: #6c757d;
 }
 
-img {
-  min-width: 100%;
-  background-repeat: no-repeat;
+.text-white{
+  color: #ffffff;
 }
 
 .hero-header {
   height: 400px;
   background-image: url("./img/Hero_Section.png");
+  background-position: center;
+  background-size: cover;
   margin-bottom: 64px;
 }
 
@@ -100,7 +224,7 @@ img {
   margin-bottom: 24px;
 }
 
-.text-container {
+.story-container {
   width: 856px;
   margin: 0 auto;
   margin-bottom: 48px;
@@ -108,17 +232,10 @@ img {
   border-bottom: 1px solid #dee2e6;
 }
 
-.h1-block {
-  margin-bottom: 16px;
-}
-
-.h4-block {
+.story-container h2{
   margin-bottom: 24px;
 }
 
-.h5-block {
-  margin-bottom: 12px;
-}
 
 .mb-12 {
   margin-bottom: 12px;
@@ -128,14 +245,6 @@ img {
   margin-bottom: 16px;
 }
 
-ul {
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
-li {
-  margin-bottom: 12px;
-}
 
 .year {
   margin-right: 8px;
@@ -144,6 +253,15 @@ li {
 .content {
   border-left: 1px solid #212529;
   padding-left: 8px;
+}
+
+ol {
+  list-style: disc;
+  padding-left: 24px;
+}
+
+ol li {
+  margin-bottom: 12px;
 }
 
 .concept {
@@ -163,7 +281,10 @@ li {
   margin-top: 8px;
   margin-bottom: 12px;
   margin-left: 8px;
-  border-bottom: 1px solid #57a203;
+}
+
+.story-container a:hover {
+  border-bottom: 1px solid var(--primary-400);
 }
 
 .footer-container{
